@@ -13,6 +13,12 @@ def run_circle() :
     grass.draw_now(400,30)
     character.draw_now(400,90)
     delay(1)
+
+    cx = 400
+    cy = 300
+    r = 200
+
+    
     pass
 
 def run_square() :
