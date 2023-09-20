@@ -33,22 +33,24 @@ def run_square() :
     print('SQUARE')
 
     # bottom
-    for x in range(50, 750, 10) :
+    for x in range(50, 750+1, 10) :
         render_all(x,90)
 
     # up
-    for y in range(90, 550, 10) :
+    for y in range(90, 550+1, 10) :
         render_all(750,y)
 
     # top
-    for x in range(750, 50, -10) :
+    for x in range(750, 50-1, -10) :
         render_all(x,550)
 
+    # down
+    for y in range(550, 90-1, -10) :
+        render_all(50, y)
 
         
     pass
 
 while True :
-   # run_circle()
+    run_circle()
     run_square()
-    break
