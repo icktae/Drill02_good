@@ -22,6 +22,7 @@ def run_circle() :
     r = 200
 
     for deg in range(0, 360, 4) :
+        clear_canvas_now()
         x = cx + r * math.cos(deg / 360 * 2 * math.pi)
         y = cy + r * math.sin(deg / 360 * 2 * math.pi)
         render_all(x, y)
@@ -33,18 +34,21 @@ def run_square() :
 
     # bottom
     for x in range(50, 750, 10) :
-        clear_canvas_now()
         render_all(x,90)
 
     # up
     for y in range(90, 550, 10) :
-        clear_canvas_now()
         render_all(750,y)
+
+    # top
+    for x in range(750, 50, -10) :
+        render_all(x,550)
+
 
         
     pass
 
 while True :
-    run_circle()
+   # run_circle()
     run_square()
     break
