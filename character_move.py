@@ -7,13 +7,14 @@ open_canvas()
 grass = load_image('grass.png')
 character = load_image('character.png')
 
+# 화면출력 함수
 def render_all(x, y):
         clear_canvas_now()
         grass.draw_now(400,30)
         character.draw_now(x,y)
         delay(0.1)
 
-
+# 원 운동 함수
 def run_circle() :
     print('CIRCLE')
 
@@ -28,7 +29,7 @@ def run_circle() :
         render_all(x, y)
         
 
-        
+# 사각 운동 함수       
 def run_square() :
     print('SQUARE')
 
@@ -51,6 +52,7 @@ def run_square() :
         
     pass
 
+# 무한 루프
 while True :
     run_circle()
     run_square()
