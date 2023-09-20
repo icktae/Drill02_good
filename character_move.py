@@ -18,8 +18,13 @@ def run_circle() :
     cy = 300
     r = 200
 
-    
-    pass
+    for deg in range(0, 360, 5) :
+        x = cx + r * math.cos(deg / 360 * 2 * math.pi)
+        y = cy + r * math.sin(deg / 360 * 2 * math.pi)
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        character.draw_now(x,y)
+        delay(0.01)
 
 def run_square() :
     print('SQUARE')
