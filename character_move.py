@@ -31,6 +31,15 @@ def run_square() :
         grass.draw_now(400,30)
         character.draw_now(x,90)
         delay(0.01)
+
+    # up
+    for y in range(90, 550, 10) :
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        character.draw_now(750,y)
+        delay(0.01)
+
+        
     pass
 
 while True :
